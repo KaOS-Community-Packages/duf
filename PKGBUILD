@@ -27,7 +27,7 @@ build() {
 }
 
 package() {
-	cd "$_archive"
+	cd "$pkgname-$pkgver"
 	install -Dm0755 -t "$pkgdir/usr/bin/" "$pkgname"
 	install -Dm0644 -t "$pkgdir/usr/share/man/man1/" "$pkgname.1"
 	install -Dm0644 -t "$pkgdir/usr/share/licenses/$pkgname/" LICENSE
