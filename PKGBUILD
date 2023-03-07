@@ -16,7 +16,7 @@ build() {
 	export CGO_CPPFLAGS="$CPPFLAGS"
 	export CGO_CFLAGS="$CFLAGS"
 	export CGO_CXXFLAGS="$CXXFLAGS"
-	cd "$_archive"
+	cd "$pkgname-$pkgver"
 	go build \
 		-trimpath \
 		-buildmode=pie \
