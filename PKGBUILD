@@ -1,5 +1,5 @@
 pkgname=duf
-pkgver=0.9.0
+pkgver=0.9.1
 pkgrel=1
 pkgdesc='Disk Usage/Free Utility'
 arch=('x86_64')
@@ -7,7 +7,7 @@ url="https://github.com/muesli/${pkgname}"
 license=('MIT')
 makedepends=('go')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('a81883475ab5591840882892a85185b7cda153e87f4d3978b45dec215761585c')
+sha256sums=('1334d8c1a7957d0aceebe651e3af9e1c1e0c6f298f1feb39643dd0bd8ad1e955')
 
 build() {
     local commit=$(zcat \${source[1]##*/} | git get-tar-commit-id)
